@@ -10,7 +10,7 @@ docker run -d -e MYSQL_ROOT_PASSWORD=password1 -e MYSQL_USER=psun -e MYSQL_PASSW
 # Launch an interactive terminal to a running docker container
 docker exec -it <container name> bash
  
-# Show a container's stdout
-docker logs <container name>
+# Show the container's latest 100 stdout logs 
+docker logs <container name> | trail -n 100
 # Follow a container's stdout
 docker logs -f <container name>
