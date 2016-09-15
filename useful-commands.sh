@@ -1,3 +1,6 @@
+# Run this command to configure your shell: 
+eval "$(docker-machine env default)"
+
 # Delete all STOPPED docker containers
 docker rm $(docker ps -aq)
  
